@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  width:100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+body{
+  width:100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background:rgb(100, 99, 82);
+  color:rgba(10,10,10,1);
+}
+
+/* avavaade, mis klikkides kaob */
+.container-intro {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background:rgba(130, 130, 130, 0.99);
+}
+.intro {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-around;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid black;
+}
+.intro-image {
+  flex: 1 0 640px;
+  cursor: pointer;
+}
+
+
+/* mängu vaade */
+.container-game {
+  display:flex;
+  position:absolute;
+  align-content: space-between;  
+  width:100%;
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  background: rgb(67, 56, 84);
+}
+.game {
+  flex: 1 0 640px;
+  width: 100vw;
+  height: 640px;
+  min-height:640px;
+  margin:auto;
+  /* see taust jookseb mängu osa taga ja kordub horisontaalsuunda pidi */
+  background: url(../img/background_game-container.png) repeat-x rgba(50,50,50,1);
+}
+
+#gjs-canvas {
+  /* selle elemendi mõõte ära igaks-juhuks muuda */
+  display:block;
+  width: 1024px;
+  height: 640px;
+  margin:0 auto;
+}
+
+#gjs-loader-images {
+  width: 0px;
+  height: 32px;
+  background: url('../data/loading.png');
+}
+
+#gjs-loader-sounds {
+  width: 0px;
+  height: 32px;
+  background: url('../data/loading.png');
+}
+
+.loader-text {
+  font-family: sans-serif;
+}
+
+
